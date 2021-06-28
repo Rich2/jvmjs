@@ -1,5 +1,5 @@
 # jvmjs
-So this repository is created from the [openstrat](https://github.com/Rich2/openstrat) for the purposes of illustraing a Scala 3 issue. The code
+So this repository is created from the [openstrat](https://github.com/Rich2/openstrat) for the purposes of illustrating a Scala 3 issue. The code
 compiles for Jvm but is failing for Scala.js. There are 2 modules Util and Graphics. Util compiles under all 4 combinations of Js and jvm targets and
 Scala 2.13.6 and Scala 3.0.1-RC2. The graphics module fails for Scala.js on Scala 3. In Sbt:<br>
 <br>
