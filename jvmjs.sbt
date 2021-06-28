@@ -1,3 +1,5 @@
+/* Copyright 2021 Richard Oliver. Licensed under Apache Licence version 2.0. */
+
 def sett2 = List(
   scalaVersion := "2.13.6",
   scalacOptions ++= Seq("-feature", "-language:implicitConversions", "-deprecation", "-encoding", "UTF-8", "-Xsource:3"),
