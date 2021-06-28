@@ -1,2 +1,5 @@
-*.class
-*.log
+bin/
+out/
+target/
+project/project/
+.*/
