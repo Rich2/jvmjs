@@ -13,7 +13,7 @@ abstract class MapGui(title: String) extends CanvasPanelled(title)
 
   topPan.mouseUp =
   { case (b, List(MouseButtonCmd(cmd)), _) => cmd.apply(b)
-    case (_, l, _) => deb(l.toString)
+    case (_, l, _) =>
   }
    
   def textBoxFull(str: String, cmd: AnyRef): PolygonCompound = Rect(75, 25).fillTextActive(Gray, cmd, str, 15, White, LeftAlign)

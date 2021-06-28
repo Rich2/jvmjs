@@ -8,7 +8,7 @@ final case class ShapeGenFillOld(shape: ShapeGenOld, colour: Colour) extends Can
 {
   override type ThisT = ShapeGenFillOld
   /** Renders this functional immutable GraphicElem, using the imperative methods of the abstract [[pCanv.CanvasPlatform]] interface. */
-  override def rendToCanvas(cp: CanvasPlatform): Unit = { deb("Not implemented.")}
+  override def rendToCanvas(cp: CanvasPlatform): Unit = { }
 
   /** Translate 2D geometric transformation on a ShapeGenFill, returns a ShapeGenFill. The Return type will be narrowed in sub traits / classes. */
   override def slateXY(xDelta: Double, yDelta: Double): ShapeGenFillOld = ShapeGenFillOld(shape.slateXY(xDelta, yDelta), colour)

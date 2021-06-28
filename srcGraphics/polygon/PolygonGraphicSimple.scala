@@ -68,7 +68,7 @@ case class PolygonActive(shape: Polygon, pointerId: Any) extends GraphicAffineEl
   override def ptsTrans(f: Pt2 => Pt2): PolygonActive = PolygonActive(shape.vertsTrans(f), pointerId)
   override def boundingRect = shape.boundingRect
   /** Renders this functional immutable GraphicElem, using the imperative methods of the abstract [[pCanv.CanvasPlatform]] interface. */
-  override def rendToCanvas(cp: CanvasPlatform): Unit = { deb("Not implemented.")}
+  override def rendToCanvas(cp: CanvasPlatform): Unit = { }
   //override def slateTo(newCen: Pt2): PolygonActive = ???
   override def ptInside(pt: Pt2): Boolean = shape.ptInside(pt)
 

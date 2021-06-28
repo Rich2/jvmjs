@@ -61,7 +61,7 @@ object EllipseCompound
       case c: Colour => cp.ellipseFill(EllipseFill(shape, c))
       //case CurveDraw(w, c) => cp.circleDraw(shape, w, c)
       //case fr: FillRadial => cp.circleFillRadial(shape, fr)*/
-      case sf => deb("Unrecognised ShapeFacet: " + sf.toString)
+      case sf =>
     }
 
     /** Translate geometric transformation. */

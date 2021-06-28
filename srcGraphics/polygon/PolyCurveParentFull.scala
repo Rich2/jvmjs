@@ -12,7 +12,7 @@ case class PolyCurveParentFull(cen: Pt2, shape: ShapeGenOld, pointerId: Any, chi
   override def mutObj(newObj: Any): PolyCurveParentFull = PolyCurveParentFull(cen, shape, newObj, children)
 
   /** Renders this functional immutable GraphicElem, using the imperative methods of the abstract [[pCanv.CanvasPlatform]] interface. */
-  override def rendToCanvas(cp: CanvasPlatform): Unit = { deb("Not implemented.")}
+  override def rendToCanvas(cp: CanvasPlatform): Unit = { }
 }
 
 object PolyCurveParentFull

@@ -14,7 +14,7 @@ case class CircleCompound(shape: Circle, facets: Arr[GraphicFacet], children: Ar
     case c: Colour => cp.circleFill(CircleFill(shape, c))
     case DrawFacet(c, w) => cp.circleDraw(shape.draw(c, w))
     case fr: FillRadial => cp.circleFillRadial(shape, fr)  
-    case sf => deb("Unrecognised ShapeFacet: " + sf.toString)
+    case sf =>
   }
 
   override def svgElem(bounds: BoundingRect): SvgCircle = SvgCircle(shape.negY.slateXY(0, bounds.minY + bounds.maxY).

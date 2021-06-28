@@ -10,7 +10,7 @@ trait PolygonCompound extends ShapeCompound with PolygonGraphic
     case DrawFacet(c, w) => cp.polygonDraw(shape.draw(c, w))
     case TextFacet(s, col) => cp.textGraphic(TextGraphic(s, 18, cenDefault, col))
     // case fr: FillRadial => cp.circleFillRadial(shape, fr)
-    case sf => deb("Unrecognised ShapeFacet: " + sf.toString)
+    case sf => 
   }
 
   override def canvElems: Arr[CanvElem] = ???
@@ -94,7 +94,7 @@ object PolygonCompound
       case DrawFacet(c, w) => cp.polygonDraw(shape.draw(c, w))
       case TextFacet(s, col) => cp.textGraphic(TextGraphic(s, 18, cenDefault, col))
       // case fr: FillRadial => cp.circleFillRadial(shape, fr)
-      case sf => deb("Unrecognised ShapeFacet: " + sf.toString)
+      case sf =>
     }
 
     override def attribs: Arr[XmlAtt] = ???

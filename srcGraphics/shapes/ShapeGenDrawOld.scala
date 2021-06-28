@@ -9,7 +9,7 @@ case class ShapeGenDrawOld(shape: ShapeGenOld, lineColour: Colour = Black, lineW
   override type ThisT = ShapeGenDrawOld
 
   /** Renders this functional immutable GraphicElem, using the imperative methods of the abstract [[pCanv.CanvasPlatform]] interface. */
-  override def rendToCanvas(cp: CanvasPlatform): Unit = { deb("Not implemented.")}
+  override def rendToCanvas(cp: CanvasPlatform): Unit = { }
 
   /** Translate 2D geometric transformation on a ShapeGenDraw, returns a ShapeGenDraw. The Return type will be narrowed in sub traits / classes. */
   override def slateXY(xDelta: Double, yDelta: Double): ShapeGenDrawOld = ShapeGenDrawOld(shape.slateXY(xDelta, yDelta), lineColour, lineWidth)
